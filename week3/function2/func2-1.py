@@ -1,6 +1,6 @@
-def above_5_5(movie):
+def above(movie):
     return movie["imdb"] > 5.5
-def above_5_5_multiple(movies):
+def above_multiple(movies):
     filtered = []
     for movie in movies:
         if movie["imdb"] > 5.5:
@@ -12,7 +12,7 @@ def category(movies):
         if movie["category"] == "Comedy":
             cate.append(movie)
     return cate
-def averaga(movies):
+def average(movies):
     total = 0
     count = 0
     for movie in movies:
@@ -20,7 +20,7 @@ def averaga(movies):
         count +=1
 
     return total/count
-def averaga_category(movies):
+def average_category(movies):
     total = 0
     count = 0
     for movie in movies:
@@ -107,10 +107,10 @@ movies = [
 }
 ]
 
-print(above_5_5(movies[7]))
-filtered = above_5_5_multiple(movies)
+print(above(movies[7]))
+filtered = above_multiple(movies)
 print(filtered)
 cate = category(movies)
 print(cate)
-print(averaga(movies))
-print(averaga_category(movies))
+print(average(movies))
+print(average_category(movies))
