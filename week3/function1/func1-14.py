@@ -11,10 +11,10 @@ ch = int(input())
 
 
 if ch == 1:
-    n = int(input())
+    n = int(input("Enter your number:"))
     convertgrams.convertounces(n)
 elif ch == 2:
-    s = input()
+    s = input("Enter your sentences:")
     reverse.reverse(s)
 elif ch ==3 :
     numbers = list(map(int, input("Enter numbers of your list: ").split()))
