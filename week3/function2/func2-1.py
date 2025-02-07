@@ -18,8 +18,8 @@ def average(movies):
     for movie in movies:
         total +=movie["imdb"]
         count +=1
-
     return total/count
+
 def average_category(movies):
     total = 0
     count = 0
