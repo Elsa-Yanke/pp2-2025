@@ -4,6 +4,6 @@ def spy_game(nums):
             return True
     return False
 
-if __name__ == "__main__":
-    nums = list(map(int,(input("Enter integers: ").split())))
-    print(spy_game(nums))
+
+nums = list(map(int,(input("Enter integers: ").split())))
+print(spy_game(nums))
