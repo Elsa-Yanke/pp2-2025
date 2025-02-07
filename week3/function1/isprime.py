@@ -8,8 +8,12 @@ def is_prime(a):
             return False
     return True
         
-def filter_prime(numbers):
-    return [num for num in numbers if is_prime(num)]
+def filter_prime(num):
+    prime_num = []
+    for x in num:
+        if is_prime(x):
+            prime_num.append(x)
+    return prime_num
 
 if __name__ == "__main__":
     numbers = list(map(int, input("Enter numbers: ").split()))
